@@ -1,1 +1,65 @@
+.menu {
+    display: inline-flex;
+    color: black;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    margin: 0px auto;
+}
+.menu ul {
+    float: right;
+    width: 50%;
+}
+.menu li {
+    display: inline-block;
+    width: 15%;
+    padding: 10px;
+}
+.menu .logo {
+    flex: auto;
+    float: left;
+}
+.homepage {
+    display: flex;;
+}
+.homepage aside {
+    width: 25%;
+    font-size: 50px;
+    margin: none;
+    display:inline-flex;
+}
+.homepage .hero {
+    border-radius: 50%;
+    width: 900px;
+    height: 650px;
+    justify-content: right;
+    margin: 0px auto;
+    margin-left: 500px;
+    display:  inline-flex;
+    overflow:hidden;
+}
 
+.homepage2 .cards {
+    width: 100%;
+    display: inline-flex;
+    margin: 0px auto;
+}
+.homepage2 .cards .card {
+    display: inline-flex;
+    width: 20%;
+    margin: 0px auto;
+    height: 300px;
+}
+.homepage2 .cards .card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+}
+.footer {
+    width: 100%;
+}
+.footerimg {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
