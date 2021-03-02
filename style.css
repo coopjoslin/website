@@ -55,10 +55,8 @@
     height: 200px;
     border-radius: 20%;
 }
-.footer {
-    width: 100%;
-}
-.footerimg {
+
+.footer img {
     border-radius: 50%;
     width: 300px;
     height: 300px;
