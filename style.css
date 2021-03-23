@@ -1,3 +1,8 @@
+body {
+    transition: ease-in-out;
+    font-family: 'DotGothic16', sans-serif;
+}
+
 .menu {
     display: inline-flex;
     color: black;
@@ -8,35 +13,56 @@
 }
 .menu ul {
     float: right;
-    width: 50%;
+    width: 90%;
 }
 .menu li {
     display: inline-block;
-    width: 15%;
+    width: 10%;
     padding: 10px;
+    margin: 0px auto;
+    align-content: space-between;
+    text-align: center;
+}
+.menu li a {
+    
+    text-decoration: none;
+    color: black;
+}
+
+.menu li:hover {
+    background-color: yellow;
+    transition-duration: 1.5s;
 }
 .menu .logo {
     flex: auto;
     float: left;
 }
 .homepage {
-    display: flex;;
+    display: flex;
+    max-width: 1920px;
+    overflow-x: hidden;
 }
 .homepage aside {
     width: 25%;
     font-size: 50px;
     margin: none;
+    padding: 100px;
     display:inline-flex;
 }
 .homepage .hero {
     border-radius: 50%;
-    width: 900px;
-    height: 650px;
     justify-content: right;
-    margin: 0px auto;
-    margin-left: 500px;
-    display:  inline-flex;
+    height: 800px;
+    min-width: 800px;
+    max-width: 800px;
+    margin-left: 350px;
+    display: flex;
     overflow:hidden;
+    flex: 1 1 auto;
+}
+
+.homepage .hero img {
+    flex: 1 1 auto;
 }
 
 .homepage2 .cards {
@@ -54,6 +80,196 @@
     width: 200px;
     height: 200px;
     border-radius: 20%;
+}
+
+.cards .card img:hover {
+    border: 5px solid black;
+    transform: scale(1.25);
+    transition-duration: 1.5s;
+    z-index: 1;
+
+}
+
+.photography {
+    justify-content: center;
+}
+
+.photography .cards {
+    justify-content: center;
+    width: 100%;
+    display: inline-flex;
+    margin: 0px auto;
+    
+}
+.photography .cards .card {
+    display: inline-flex;
+    width: 20%;
+    margin: 0px auto;
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    justify-content: center;
+    border: 5px solid black;
+    margin: 10px;
+    padding: 10px;
+    top: 100px;
+}
+
+.photography .cards .card h2 {
+    margin: 0px;
+    padding: 0px;
+}
+.photography .cards .card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    margin-top: 50px;
+}
+
+.gallery .cards, .art .cards {
+    justify-content: center;
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row wrap;
+    margin: 0px auto;
+    
+}
+.gallery .cards .card, .art .cards .card {
+    display: inline-flex;
+    width: 20%;
+    margin: 0px auto;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    top: 100px;
+}
+
+.gallery .cards .card h2 {
+    margin: 0px;
+    padding: 0px;
+}
+.gallery .cards .card img, .art .cards .card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    margin-top: 50px;
+    z-index:1;
+}
+
+.videos {
+
+}
+
+.videos .video1 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+
+.videos .video1 img{
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.videos .video1 img:hover, .videos .video2 img:hover, .videos .video3 img:hover{
+    border: 5px solid black;
+    transform:scale(0.8);
+    transition:ease-in-out;
+    transition-duration: 1s;
+}
+
+.videos .video1 #descriptor1 {
+    background-color: yellow;
+    border: 5px solid black;
+    min-width: 500px;
+    max-height: 300px;
+    display: inline-flex;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding: 10px;
+}
+.videos .video1 #descriptor2 {
+    background-color: yellow;
+    border: 5px solid black;
+    min-width: 500px;
+    max-height: 300px;
+    display: inline-flex;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.videos .video2 {
+    display: flex;
+}
+
+.videos .video2 img{
+    border-radius: 50%;
+    width: 600px;
+    left: 200px;
+    height: 600px;
+    margin-left: 200px;
+}
+
+.videos .video2 #descriptor2 {
+    background-color: yellow;
+    border: 5px solid black;
+    min-width: 500px;
+    height: 230px;
+    margin-left: 0px;
+    display: inline-flex;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding: 10px;
+}
+.videos .video3 {
+    display: flex;
+}
+
+.videos .video3 img{
+    border-radius: 50%;
+    width: 800px;
+    left: 500px;
+    height: 800px;
+    margin-left: 200px;
+}
+
+.videos .video3 #descriptor3 {
+    background-color: yellow;
+    border: 5px solid black;
+    min-width: 500px;
+    height: 200px;
+    margin-left: 0px;
+    display: inline-flex;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.art {
+    width: 70%;
+    margin: 0px;
+    float: left;
+}
+
+.artAside {
+     background-color: yellow;
+     border: 5px solid black;
+     margin: 0px 10px;
+     float: right;
+     width: 20%;
+     height: 600px;
+     margin-top: 80px;
+     padding: 10px;
+
+
+}
+
+.about #sianna1 img{
+    width: 20%;
+    height: 20%;
+    float: right;
 }
 
 .footer img {
